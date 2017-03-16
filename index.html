@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Tips Before You Fly</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <!--meta data for sharing links on Facebook-->
+    <meta property="og:title" content="The Movements of George Patton during WWII" />
+    <meta property="og:url" content="http://cdn.rawgit.com/jug650/Patton_map/master/dist/template.html" />
+    <meta property="og:description" content="This is an example of story map." />
+    <meta property="og:image" content="img/inspire.jpeg" />
+
+    <!--facebook and info icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--add favicon for the web page-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$("#menu-close").click();>Intro</a>
+            </li>
+            <li>
+                <a href="#services" onclick=$("#menu-close").click();>Services</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center" style="padding-bottom: 300px;">
+            <h1>Where can I fly my Drone?</h1>
+            <h3>Trying to Simplify the Answer to this Sometimes Complicated Question</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Intro</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                        <h2>Unmanned Arial Systems, also known as drones, are rapidly increasing in popularity. As the popularity of these devices
+                            continue to grow, there will be more concern over who is allowed to fly them and where they are allowed to fly them. These public concerns revolve around public safety and public privacy.</h2>
+                        <h3>The intent of this site is to provide some basic knowledge to anyone who may be interested in drones and to also provide them with some external references
+                    if they chose to educate themselves further.</h3>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <aside class="callout">
+        <div class="text-vertical-left">
+        </div>
+    </aside>
+
+    <!-- Part 107 -->
+    <section id="about2" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <h3>In recent years, much of the confusion was due to the fact that there was a severe lack of formal guidance on UAS operation. As the governing entity
+                    of all US airspace, it was up to the Federal Aviation Administration to decide how UAS platforms would be allowed to operate in domestic airspace.
+                    In the fall of 2016, the FAA released a new series of regulations that more clearly defined the regulations on UAS operations.</h3>
+                    <h3>Known as Part 107, these regulations provided new procedures for UAS registration, operating procedures, and a brand new
+                    commercial operating license for UAS pilots. Below are the basic guidelines provided by the FAA that covers the basic restrictions for recreational use:</h3>
+                <ul3 style="font-size: large">
+                    <li>Follow community-based safety guidelines</li>
+                    <li>Fly no higher than 400 feet and remain below any surrounding obstacles when possible.</li>
+                    <li>Keep your UAS in eyesight at all times, and use an observer as needed.</li>
+                    <li>Remain well blear of all manned aircraft operations. You must also see and avoid other aircraft and obstacles at all times.</li>
+                    <li>Do not intentionally fly over unprotected persons or moving vehicles. Generally, remain at least 25 feet from individuals and vulnerable property.</li>
+                    <li>Contact the airport and control tower before flying within five miles of an airport or heliport.</li>
+                    <li>Do not fly in adverse weather conditions.</li>
+                    <li>Do not fly while under the influence of alcohol or drugs.</li>
+                    <li>Check and follow all local laws and ordinances before flying over private property.</li>
+                    <li>Do not fly near or over sensitive infrastructure or property.</li>
+                </ul3>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout1">
+        <div class="text-vertical-center">
+            <h1>Why is this important?</h1>
+        </div>
+    </aside>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Our Work</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+     <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Useful Maps</h1>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Map
+    <section id="contact" class="google.maps.Data">
+        <h3 style="text-align: center">Popularity of Drones in Oregon</h3>
+        <iframe width="100%" height="600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <br />
+        <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+                <script>
+
+                    maps.data.loadGeoJson('google.json');
+
+                </script>
+
+        </small>
+
+    </section>
+
+    <!-- Mapbox -->
+    <!--<section id="about1">-->
+        <!--<div class="container-fluid">-->
+            <!--<div class="row">-->
+                <!--<div class="col-lg-12 text-left" style="font-size: large">-->
+                    <!--<div id="map" style="width: 100%; height: 100%; position:absolute"></div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /.row &ndash;&gt;-->
+        <!--</div>-->
+        <!--&lt;!&ndash; /.container &ndash;&gt;-->
+    <!--</section>-->
+
+
+
+    <!--&lt;!&ndash; Mapbox &ndash;&gt;-->
+    <!--<section id="about1">-->
+        <!--<div class="container">-->
+             <!--<div id="map" style=""></div>-->
+        <!--</div>-->
+            <!-- /.row -->
+
+        <!-- /.container -->
+    <!--</section>-->
+
+    <!--<section>-->
+        <!--&lt;!&ndash;<div class="stack stack-page-content">&ndash;&gt;-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-12">-->
+                    <!--<div id="map" style=""></div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
+
+
+
+    <!-- Mapbox -->
+    <!--<section id="about1"  style="width:1000px; height:1000px; position:absolute;top:0;left:0">-->
+        <!--<div id="map "></div>-->
+
+    <!--</section>-->
+
+
+
+    <section>
+        <!--<div class="stack stack-page-content">-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="map" style="height:600px;margin-bottom: 100px; margin-top: 100px"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <aside class="callout2">
+        <div class="text-vertical-left">
+        </div>
+    </aside>
+
+    <!-- AirMap -->
+    <section>
+        <!--<div class="stack stack-page-content">-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="text-align:center; margin-top: 75px">AirMap</h2>
+                    <p style="text-align: center">AirMap may be the most comprehensive source currently available on the web. It not only identifies "No Fly Zones", but it also identifies areas were there may be some advisories to be aware of as well. However,
+                        with so many different locations identified on the map for a specific location, it may be difficult for the average UAS pilot to understand.</p>
+                    <p><iframe style="border: 0; width: 100%; height: 600px; margin-top: 25px" src="http://app.airmap.io/partners/know_before_you_fly/index.html" width="300" height="150" frameborder="0" scrolling="yes"></iframe></p>
+                    <p><a href='https://play.google.com/store/apps/details?id=com.airmap.airmap&#038;utm_source=global_co&#038;utm_medium=prtnr&#038;utm_content=Mar2515&#038;utm_campaign=PartBadge&#038;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style="height: 60px"  alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a><a href='https://itunes.apple.com/us/app/airmap-for-drones/id1042824733?mt=8'><img style="height: 60px; padding: 10px"  alt='Get it on the App Store' src='https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg'/></a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="callout3">
+        <div class="text-vertical-left">
+        </div>
+    </aside>
+
+    <!-- ClubMap -->
+    <section>
+        <!--<div class="stack stack-page-content">-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="text-align:center; margin-top: 75px">AMA Clubs</h2>
+                    <p style="text-align: center">AirMap may be the most comprehensive source currently available on the web. It not only identifies "No Fly Zones", but it also identifies areas were there may be some advisories to be aware of as well. However,
+                        with so many different locations identified on the map for a specific location, it may be difficult for the average UAS pilot to understand.</p>
+                    <p><iframe style="border: 0; width: 100%; height: 600px; margin-bottom: 75px" src="http://suas.modelaircraft.org/sites/all/themes/suas/maps/index.html" width="300" height="150" frameborder="0" scrolling="yes"></iframe></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="callout4">
+        <div class="text-vertical-left">
+        </div>
+    </aside>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Other Valuable Resources</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Know Before You Fly</strong>
+                                </h4>
+                                <p>Know Before You Fly is an educational website that is ran through a partnership
+                                    of various organizations that includes the FAA. Their goal is to provide a resource that has all of the necessary information to
+                                    operate for recreational, educational, and commercial purposes. At the moment, this may be the most comprehensive and easy to
+                                    follow source of information available.</p>
+                                <a href="http://knowbeforeyoufly.org/" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>DJI</strong>
+                                </h4>
+                                <p>As the world's largest consumer drone manufacture, DJI has put a lot of effort into improving UAS operational safety.
+                                    This is evident in the improved safefy features and "No Fly Zone" awareness that are implemented into their products. Regardless
+                                    if you buy their products or not, DJI has provided a resource that allows you to read about operational regulations, flight planning maps,
+                                    and even the ability to file for waivers to operate in restricted areas. Regardless of what kind of UAS you fly, this website is a helpful resource.</p>
+                                <a href="http://www.dji.com/flysafe" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-plane fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>AirMap</strong>
+                                </h4>
+                                <p>As stated above, AirMap just might be the largest single collection of data on airspace restrictions for drones.
+                                Not only are aggressively working to inform the recreational operators, but they are also are working on projects with
+                                    different manufactures and software developers to enhance flight safety. This includes new features for their mobile app that gives alerts on your phone when
+                                manned aircraft are in the area. At their website, their map has some increased features that allow the you to </p>
+                                <a href="https://app.airmap.io/" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-globe fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>FAA</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="https://www.faa.gov/uas/" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Jared Ritchey</strong>
+                    </h4>
+                    <p>Oregon State University
+                        <br>College of Earth, Ocean, and Atmospheric Science
+                        <br>Corvallis, Oregon</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (541) 737-5503</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">ritcheja@oregonstate.edu</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a class="fa fa-facebook fa-fw fa-3x" href="https://facebook.com/sharer.php?u=http://google.com" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/intent/tweet/"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li> <a href="#"></a>
+                            <i class="fa fa-info fa-fw fa-3x" style="top:50px" data-toggle="modal" data-target="#info-modal"></i>
+                        </li>
+
+                    </ul>
+                    <hr class="small">
+                </div>
+            </div>
+        </div>
+
+        <!--the info page-->
+        <div class="modal fade" id="info-modal" role="dialog">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">About</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>This is a web map that discusses the movements of General George Patton during the Second World War. It begins with his arrival in Africa and ends with his death in Germany.
+                            It is done for project assignment for GEOG 371: Web Mapping provided by Oregon State University. The story map library is derived from the storymap plugin for leaflet at <a href="http://atlefren.github.io/storymap/">http://atlefren.github.io/storymap/</a>, and its functionality relies on both leaflet and Boostrap.</p>
+                        <p><b>storymap.js</b> | Released Date: 03/17/2017 | Version: 1.0</p>
+                        <p><b>Author: Jared Ritchey</b> | College of Earth, Ocean, Atmospheric Science | Oregon State University </p>
+                        <p>The data for this page is from FAA.gov, AirMap.com, and KnowBeforeYouFly.org.</p>
+                        <p>The favicon image was acquired from <a>http://www.clipartkid.com/images/33/united-states-flag-clip-art-cliparts-co-m72OI3-clipart.png.</a></p>
+                        <p>This story map uses geospatial data from Mapbox, Leaflet, OpenStreet, and .</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <!--&lt;!&ndash; jQuery &ndash;&gt;-->
+    <!--<script src="js/jquery.js"></script>-->
+
+    <!--&lt;!&ndash; Bootstrap Core JavaScript &ndash;&gt;-->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+//    var onMapMouseleaveHandler = function(event) {
+//        var that = $(this);
+//        that.on('click', onMapClickHandler);
+//        that.off('mouseleave', onMapMouseleaveHandler);
+//        that.find('iframe').css("pointer-events", "none");
+//    }
+//    var onMapClickHandler = function(event) {
+//            var that = $(this);
+//            // Disable the click handler until the user leaves the map area
+//            that.off('click', onMapClickHandler);
+//            // Enable scrolling zoom
+//            that.find('iframe').css("pointer-events", "auto");
+//            // Handle the mouse leave event
+//            that.on('mouseleave', onMapMouseleaveHandler);
+//        }
+//        // Enable map zooming with mouse scroll when the user clicks the map
+//    $('.map').on('click', onMapClickHandler);
+
+
+    (function() {
+        var ev = new $.Event('style'),
+            orig = $.fn.css;
+        $.fn.css = function() {
+            $(this).trigger(ev);
+            return orig.apply(this, arguments);
+        }
+    })();
+
+    var map = L.map('map', {center: [44.125, -120.846], zoom: 6.75});
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw', {
+        maxZoom: 18,
+        attribution: '<a target="https://www.mapbox.com/maps/">Mapbox</a>',
+        id: 'mapbox.light',
+        detectRetina: true
+    }).addTo(map);
+
+    $('#about1').bind('style', function(e) {
+        map.invalidateSize();
+
+//        $("body").css({'padding-right': "0px"});
+        // $(".Text").css('margin-top', vertAlign);
+    });
+
+    var geometry = null;
+
+    // Set function for color ramp
+    function setColor(density){
+        return density > 100 ? '#a63603' :
+            density > 50 ? '#e6550d' :
+                density >  25 ? '#fd8d3c' :
+                    density > 10 ? '#fdbe85' :
+                        '#feedde';
+    }
+
+    // Set style function that sets fill color property equal to drone density
+    function style(feature) {
+        return {
+            fillColor: setColor(feature.properties.drones),
+            fillOpacity: 0.7,
+            weight: 1,
+            opacity: 1,
+            color: 'black',
+            dashArray: '1'
+        };
+    }
+
+    // Add Drone
+    $.getJSON("geojson/drone_coro.geojson",function(data){
+        geometry = L.geoJson(data, {style: style}).addTo(map);
+    });
+
+    var legend = L.control({position: 'topright'});
+
+    // Function that runs when legend is added to map
+    legend.onAdd = function () {
+
+        // Create Div Element and Populate it with HTML
+        var div = L.DomUtil.create('div', 'legend');
+        div.innerHTML += '<b># Number of Registered Pilots Per Zip Code</b><br />';
+        div.innerHTML += '<i style="background: #a63603; opacity: 0.5"></i><p>Greater than 100</p>';
+        div.innerHTML += '<i style="background: #e6550d; opacity: 0.5"></i><p>50-100</p>';
+        div.innerHTML += '<i style="background: #fd8d3c; opacity: 0.5"></i><p>25-50</p>';
+        div.innerHTML += '<i style="background: #fdbe85; opacity: 0.5"></i><p> 10-25</p>';
+        div.innerHTML += '<i style="background: #feedde; opacity: 0.5"></i><p> Less than 10</p>';
+
+
+        // Return the Legend div containing the HTML content
+        return div;
+    };
+
+    // Add Legend to Map
+    legend.addTo(map);
+
+    </script>
+
+</body>
+
+</html>
