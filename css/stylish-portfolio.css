@@ -270,6 +270,14 @@ hr.small {
     margin: 10px;
 }
 
+.call-to-action1 {
+    padding: 10px 0;
+}
+
+.call-to-action1 .btn {
+    margin: 10px;
+}
+
 /* Map */
 
 .map {
