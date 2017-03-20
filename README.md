@@ -20,36 +20,20 @@ For both of these reasons, the FAA released their new policy on UAS operations r
 
 5. Finally, the jpegs were located online at [Skypixel.com]().
 
-   ​
 
-   - An introduction to your final project (3 pages and double spaced). You might describe the project purpose, data source, map elements,  map libraries, and other issues you think are necessary to inform your audience of;
-   - The decision process you went through when deciding how to serve the different layers;
-   - A functionality summary of the web mapping. You are required to explain each function using **a screenshot of  the map and a concomitant brief description**. This summary could be something similar to a walkthrough handout I demonstrated in lecture. 
-   - The things you learned in this project that will be most valuable to you in your professional or academic career.
+## 3\. Website Functionality 
 
-6. **Source code** that contains all the files (html, js, css, and data) used to make the web mapping application.
+1. There is a drop-down menu thatallows the user to jump to various sections of   the page. Also, there is a chevronicon at the bottom of the window that allows the user to jump back to the top of the page.
+2. On the choropleth map, the user is limited to zoom and pan functions only. 
+3. The AirMap can find the user's location and will show the advisories in the area of that location. Additionally, the user can click a location and the map will show the advisories and the contact information for the area of potential conflict with the pilot. Finally, the user also can use a search function to find any particular location. 
+4. The AMA club map can also hasthe ability to find the users location. This time it will show them the nearestAMA charter club to their location and will provide them with the contactinformation for that club. Additionally, the map baselayer has some airspacerestricted areas, but just not to the extent of the AirMap.
+5. Finally, the website has built in hyperlink functions to external references that the user may want to investigate further. At the very bottom is the contact information.
 
-Please compress the cover letter, project report, and the source code in a zipped package, and submit it to a dropbox in Canvas **(by 5:00pm on March 19th)**. 
+## 4\. Problems
 
-## 3\. Presentation and peer review
+1. Currently, the only significantproblem with the website is the functionality of the social media sharingfunction. As of right now, the Facebook icon is sharing the wrong website andthe Twitter icon does allow you to share as well, but it does not currently automaticallyprovide a link back to map website. Both issues will be fixed shortly.
+2. Layout of the text can be missaligned (margins) depending on screen size and settings. 
 
-Academics often attend conferences where they share their discoveries and browse the work of others to gain new ideas and offer feedback. on March 22nd, we will hold a final presentation meeting at 361 Strand Hall. Each team (made up of an individual or pair) is asked to present their final project in 8 minutes. And there will be a F&A session in 2 to 3 minutes.  During the final presentation, each student will need to review all final projects and submit your review notes.
+## 5. Other things to be Aware Of
 
-## 4\. Bonus
-
-The final project has a bonus session to encourage you to understand and further contribute to the open source community. If you complete **all the three tasks** listed below, you will earn the bonus credits:
-
-1. Publish your web map in an Internet accessible server. This server could be your google cloud platform, the course map server at `http://www.mapio.us`, or others.
-2. Share your source code on GitHub.
-3. Convert your project report into a **README.md** file and share to the front page of your GitHub repository.
-
-## 5\. Timeline
-
-1. **Submit your project proposal by 5:00pm on Feb 10th**. The proposal should at least contain the project topic, potential audience, and the possible data sources.
-2. Each project team will hold a project meeting with the instructor Bo Zhao to detail the proposal during the week Feb 13th to 17th.
-3. The instructor and the TA will help each team look for data, map libraries and fine-tune the web map interface design. Each team will have one month to work on the final project.
-4. Please compress the cover letter, project report, and the source code in a zipped package, and submit it to a dropbox in Canvas **by 5:00pm on March 19th.** (if you want to get the bonus credit, you will need to complete the requirements for the bonus by this deadline as well.)
-5. **On March 22th (Wednesday) 12:00pm to 1:50pm**, we will hold a final project presentation meeting at 361 strand hall.
-6. You will need to submit **peer review notes** for each project right after the presentation meeting. 
-
-> **Note:** The requirements to the final project may be slightly changed according the progress of this course. The final requirements are subject to the instructor's notification.
+1. The HTML file contains sections and divisions that are either copies of existing sections or are unique to themselves, but are however turn off. They are left in the code with the intention of being able to change the web site design or layout more rapidly if desired.
